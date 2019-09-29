@@ -1,0 +1,173 @@
+.banner
+	background: url('/app/img/header/bg.jpg') center center no-repeat
+	background-size: cover
+	height: auto
+
+.banner__content
+	background: $banner
+	width: 50%
+	padding: 40px 75px
+
+.banner__content--xs
+	display: none
+	background: $banner
+	width: 80%
+	padding: 30px 0
+
+
+
+.content__first
+	margin: 0 0 40px 0
+
+	.content__title
+		font-size: 30px
+		font-family: $proxima-nova
+		font-weight: 900
+		text-transform: uppercase
+	.content__small
+		padding-top: 20px
+		font-size: 18px
+		font-weight: 900
+
+
+.content__ul
+	margin-top: 60px
+
+.content__li
+	display: flex
+	align-items: center
+	margin: 35px 0
+	
+.li__img
+	padding-right: 20px
+
+.li__text
+	font-size: 14px
+	font-weight: 700
+	margin: 0
+
+
+//***************МЕДИАЗАПРОСЫ**************//
+
+@media(max-width: 1024px)
+
+	.banner__content
+		padding: 35px 75px
+
+
+@media(max-width: 992px)
+	
+	.banner__content
+		width: 55%
+		padding: 35px 55px
+	
+	.content__first
+		margin: 0 0 25px 0
+
+		.content__title
+			font-size: 26px
+
+	.content__ul
+		margin-top: 50px
+
+	.content__li
+		margin: 25px 0
+
+
+@media(max-width: 767px)
+	
+	.banner__content
+		width: 70%
+		padding: 35px 35px
+	
+		.content__title
+			font-size: 22px
+
+		.content__small
+			font-size: 16px
+
+
+
+@media(max-width: 550px)
+
+	.banner
+		height: 300px
+		margin-bottom: 20px
+
+	.banner__content
+		visibility: hidden
+
+	.banner-xs
+		background: $header
+		justify-content: center
+		margin-top: -80px
+		padding: 20px 0
+
+	.banner__content--xs
+		display: block
+		margin: 0 auto
+	
+	.content__first
+		text-align: center
+		margin-bottom: 10px
+
+		.content__title
+			font-size: 22px
+			padding: 0
+
+		.content__small
+			padding-top: 10px
+			font-size: 16px
+
+	.content__ul
+		display: flex
+		flex-direction: column
+		margin: 20px 30px
+
+
+	.content__li
+		margin: 15px 0
+
+	.li__text
+		font-size: 14px
+
+
+
+@media(max-width: 490px)
+
+	.banner__content--xs
+		width: 90%
+	
+	.li__text
+		font-size: 12px
+
+
+
+@media(max-width: 460px)
+
+	.content__ul
+		padding: 0 35px
+		margin: 20px 0px
+
+
+
+@media(max-width: 400px)
+
+	.banner__content--xs
+		width: 90%
+
+	.li__img
+		padding-right: 10px	
+	
+	.content__ul
+		padding: 0 30px
+		margin: 20px 0px
+	
+	.li__text
+		font-size: 12px
+
+
+@media(min-width: 320px) and (max-width: 340px)
+	.content__ul
+		padding: 0 20px
+		margin: 20px 0px	
